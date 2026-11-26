@@ -1,0 +1,19 @@
+{
+  "name": "support-ticket-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini helpdesk: users raise support tickets, admins manage and resolve them (Node.js, Express, MongoDB, React).",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd backend && npm ci &&cd ../frontend && npm ci --include=dev && npm run build",
+    "start": "cd backend && npm start",
+    "dev:api": "cd backend && npm run dev",
+    "dev:web": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "seed:demo": "cd backend && npm run seed -- --demo",
+    "test": "cd backend && npm test"
+  }
+}
